@@ -1,0 +1,44 @@
+doctype html 
+html 
+    head 
+        title Actividad
+        link(rel="stylesheet", href="Estilos.css") 
+    body 
+        - let nombrePagina = "Actividad"
+        - let nombreEmpresa = "El mas Capo"
+        - let sexo = "M"
+        if sexo == "H"
+            - let nombreUsuario = "Edgar"
+        else 
+            - let nombreUsuario = "Perla"
+        - let edad = 20
+        - let autor = "Edgar Jafet Perez Juarez y Eduardo Isidro Hernandez"
+        - let paginas = ["Principal", "Inventario", "Contacto", "Ventas", "Usuarios"]
+
+        header 
+            p= nombreEmpresa
+            p= nombrePagina
+        nav
+            ul 
+                each pagina in paginas
+                    li 
+                        a(href=pagina + ".html") #{pagina}
+        aside 
+            if sexo == "H"
+                img(src="../Recursos/Hombre.png")         
+            else 
+                img(src="../Recursos/Mujer.png")
+            br
+            div 
+                span= "Hombre: " + nombreUsuario
+                br
+                span= "Edad: " + edad
+        section 
+            article 
+                p Te damos la bienvenida a nuestra pagina web
+            article 
+                p Aqui podras encontrar todo lo que necesitas
+            article
+                p Si tienes alguna duda, no dudes en contactarnos
+        footer
+            p= "Derechos Reservados " + autor

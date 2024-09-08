@@ -1,0 +1,122 @@
+$num :1;
+$tam : 30px;
+$tiempo : 20s;
+
+//cadenas
+$nombre : "Jafet";
+$valor: block;
+//colores
+$rojo : red;
+$color_rgb : rgb(1, 114, 114);
+$color_hex : #FF5733;
+$color_hex: #FF5733;
+//Variables de página
+$sexo : "M";
+$ancho: 80%;
+
+//Condiciones
+body {
+    @if $sexo =="H" {
+        background-color: blue;
+    }
+
+    @else {
+        background-color: pink;
+    }
+}
+
+header {
+    width: $ancho;
+    height: auto;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+nav {
+    width: $ancho;
+    margin: 0   auto;
+    height: auto;
+    background-color: brown;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+$tipo_lista: none;
+
+nav ul {
+    list-style: $tipo_lista;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+nav ul li a {
+    color: white;
+    padding-right: 10px;
+}
+
+aside {
+    background-color: chocolate;
+    color: white;
+    width: 20%;
+    margin-left: 10%;
+    padding-bottom: 10px;
+    float: left;
+    margin-top: 1%;
+}
+
+$alto_imagen: 100px;
+$ancho_imagen: 100px;
+$borde_imagen: 5px solid black;
+
+aside img {
+    margin: 10px auto;
+    display: block;
+    width: $ancho_imagen;
+    height: $alto_imagen;
+    border: $borde_imagen;
+    border-radius: 50%;
+    border: $borde_imagen;
+}
+
+section {
+    margin-top: 1%;
+    background-color: red;
+    color: white;
+    height: auto;
+    width: 60%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    float: left;
+    border-radius: 5px;
+}
+
+$marge_articulo: 5px 5px 5px 5px;
+
+article {
+    border-radius: 5px;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    margin: $marge_articulo;
+}
+
+footer {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    width: $ancho;
+    border: 2px solid black;
+}

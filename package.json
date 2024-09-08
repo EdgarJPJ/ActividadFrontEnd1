@@ -1,0 +1,14 @@
+{
+  "name": "actividadenduo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug -w ./Ejercicio/Archivos_Pug/Principal.pug -o ./Ejercicio/Resultado_final -P",
+    "scss": "sass -w ./Ejercicio/Archivo_Sass/Estilos.scss ./Ejercicio/Resultado_final/Estilos.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
